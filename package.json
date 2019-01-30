@@ -13,7 +13,7 @@
     "init:gitignore": "curl https://raw.githubusercontent.com/github/gitignore/master/Node.gitignore -o .gitignore",
 
     "build": "npm-run-all build:* test",
-    "build:clean": "rimraf -rf",
+    "build:clean": "rimraf css/",
     "build:sass": "node-sass --output-style compact -o css sass",
     "build:autoprefixer": "autoprefixer-cli css/style.css",
 
